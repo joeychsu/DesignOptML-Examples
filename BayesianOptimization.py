@@ -20,6 +20,7 @@ def main():
     args = parser.parse_args()
 
     # 列出此次執行的設定值
+    print("------------------------------------------------------")
     print("執行設定：")
     print(f"  參數空間維度: {args.space_dim}")
     print(f"  隨機種子列表: {args.seeds}")
@@ -131,6 +132,8 @@ def main():
         print(f"最終最佳值出現的平均迭代次數: {avg_final_best_iteration:.2f}")
     else:
         print("在所有運行中未出現新的最佳值")
+
+    print("------------------------------------------------------")
 
 if __name__ == "__main__":
     main()
